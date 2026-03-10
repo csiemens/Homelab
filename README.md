@@ -31,3 +31,19 @@ Simulate an RDP brute-force attack from Kali Linux against a Windows 11 machine 
 Successfully simulated an RDP brute-force attack from the attacker machine. Multiple failed logon events (Event ID 4625) were detected, with no corresponding successful logon events (Event ID 4624). The attack did not result in unauthorized access.
 
 [Brute_Force_RDP_Report](./Brute_Force_RDP_Report.pdf)
+
+---
+
+## Wireshark Packet Captures
+
+>**Note:** NAT and DHCP were used on Windows 11 for the Wireshark lab, allowing the VM to access external websites and capture real-world traffic.
+
+### Objective
+
+To capture and analyze network traffic using Wireshark, including ICMP, DNS, TCP handshakes, and HTTP requests, in order to better understand network protocol behavior and associated security implications.
+
+### Outcome
+
+Successfully captured and analyzed network traffic packets using Wireshark, learning about protocols such as ICMP, DNS, TCP connection establishment, and HTTP request/response behavior.
+
+[Wireshark_Report](./Wireshark.pdf)
