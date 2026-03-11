@@ -47,3 +47,19 @@ To capture and analyze network traffic using Wireshark, including ICMP, DNS, TCP
 Successfully captured and analyzed network traffic packets using Wireshark, learning about protocols such as ICMP, DNS, TCP connection establishment, and HTTP request/response behavior.
 
 [Wireshark_Report](./Wireshark.pdf)
+
+---
+
+## Automated Ticketing using Python & Jira
+
+> **Note:** A NAT network with DHCP was used for both the Windows 11 and Kali Linux virtual machines to allow communication between systems and enable outbound HTTPS requests required for Jira ticket creation.
+
+### Objective
+
+Monitor and detect RDP brute-force authentication attempts in Splunk, with automated execution of a Python script to generate Jira tickets for real-time incident response.
+
+### Outcome
+
+The Splunk alert successfully detected excessive failed RDP logon attempts (Event ID 4625). When the threshold was exceeded, a webhook request was sent to the Flask service, which processed the alert data and automatically created a Jira ticket containing the relevant attacker and host information.
+
+[Automated Ticketing_Report](./Ticket_Automation/Ticket_Automation.pdf)
